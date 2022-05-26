@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+
+    "name": "Buttercup",
+    "description": "Browser extension for Buttercup",
+    "version": "0.0.0",
+
+    "applications": {
+        "gecko": {
+            "id": "{10e7d273-2e63-47c9-82af-76c45dc1b624}"
+        }
+    },
+
+    "action": {
+        "default_icon": "resources/buttercup-256.png",
+        "default_popup": "popup.html#/"
+    },
+
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+
+    "web_accessible_resources": [{
+        "resources": [
+            "dialog.html",
+            "resources/*",
+            "setup.html"
+        ],
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "extension_ids": []
+    }]
+}
